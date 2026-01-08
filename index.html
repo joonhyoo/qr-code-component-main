@@ -38,24 +38,26 @@
         justify-content: center;
         height: 100svh;
       }
-      .slate500 {
-        color: hsl(216, 15%, 48%);
-      }
-      .slate900 {
+      #qr-title {
         color: hsl(218, 44%, 22%);
+        font-size: 22px;
+      }
+      #qr-desc {
+        color: hsl(216, 15%, 48%);
+        font-size: 15px;
       }
       #main-container {
         background-color: white;
         padding: 16px;
         width: 290px;
-        border-radius: 16px;
+        border-radius: 24px;
       }
       #qr-code {
         max-width: 100%;
         border-radius: 12px;
       }
       #description {
-        padding: 0 8px;
+        padding: 0 14px;
       }
       .attribution {
         position: absolute;
@@ -68,18 +70,22 @@
     </style>
   </head>
   <body>
-    <div id="main-container">
-      <img id="qr-code" src="./images/image-qr-code.png" />
+    <main id="main-container">
+      <img
+        id="qr-code"
+        src="./images/image-qr-code.png"
+        alt="qr code that leads to the frontendmentor.io website"
+      />
       <div id="description">
-        <h2 class="slate900">
+        <h3 id="qr-title">
           Improve your front-end skills by building projects
-        </h2>
-        <p class="slate500">
+        </h3>
+        <p id="qr-desc">
           Scan the QR code to visit Frontend Mentor and take your coding skills
           to the next level
         </p>
       </div>
-    </div>
+    </main>
 
     <div class="attribution">
       Challenge by
